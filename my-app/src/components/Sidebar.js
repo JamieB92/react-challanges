@@ -1,8 +1,15 @@
 import React from "react";
+import css from "./css/Sidebar.module.css"
 
 
 function Sidebar() {
-    return <div><a href="/">MyPhotos</a> <a href="/">My Illustrations</a> <a href="/">My Paintins</a></div>
+    return (
+        <div className={css.sidebar} >
+            <a href="/"> MyPhotos</a>
+            <a href="/"> My Illustrations</a>
+            <a href="/"> My Paintings</a>
+        </div>
+    )
 }
 
 export default Sidebar;
